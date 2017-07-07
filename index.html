@@ -24,6 +24,22 @@
             <input type="text" id="search-input" name="wd" placeholder="Search" />
             <input type="submit" value="Search" />
         </form>
+        
+        <script>
+            document.onkeydown=function(event){
+ 3             var e = event || window.event || arguments.callee.caller.arguments[0];
+//  4             if(e && e.keyCode==27){ // 按 Esc 
+//  5                 //要做的事情
+//  6               }
+//  7             if(e && e.keyCode==113){ // 按 F2 
+//  8                  //要做的事情
+//  9                }            
+10              if(e && e.keyCode==13){ // enter 键
+11                  var form = document.getElementsByTagName("form")[0];
+                    form.submit();
+12             }
+13         }; 
+        </script>
 
 <!--         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
