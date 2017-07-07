@@ -64,6 +64,11 @@
 //                 $("body").css("zoom", $(window).width() / 640);
 //                 $("body").css("display", "block")
 //             });
+                window.onload = function(){
+                    console.log("onload");
+                    document.getElementsByTagName("body")[0].style.zoom = window.screen.width/640;
+                    document.getElementsByTagName("body")[0].style.display = "block";
+                }
             
             
             document.addEventListener("touchend", function (event) {
