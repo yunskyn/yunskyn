@@ -69,6 +69,11 @@
                     document.getElementsByTagName("body")[0].style.zoom = window.screen.width/640;
                     document.getElementsByTagName("body")[0].style.display = "block";
                 }
+                window.onresize = function(){
+                    console.log("onresize");
+                    document.getElementsByTagName("body")[0].style.zoom = window.screen.width/640;
+                    document.getElementsByTagName("body")[0].style.display = "block";
+                }
             
             
             document.addEventListener("touchend", function (event) {
